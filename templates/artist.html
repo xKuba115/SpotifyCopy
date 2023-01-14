@@ -1,0 +1,15 @@
+<html>
+
+<body>
+
+    
+{{artist}} <br>
+{% for artist_songs, artist_songs_year, artist_songs_language ,artist_songs_genre in zipek %}
+{{ artist_songs }};{{artist_songs_year}};{{ artist_songs_language }};{{artist_songs_genre}};   
+<a href="http://127.0.0.1:5000/{{artist}}/{{artist_songs}}">Tekst</a> <br>
+{% endfor %}
+<img src='{{photo}}' style="height:400px;" > 
+</body>
+
+
+</html>

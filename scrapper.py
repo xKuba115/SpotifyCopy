@@ -14,7 +14,8 @@ def GetImageSrc(name):
 
     except Exception as e:
         print(f"Error: {e}")
-        return None
+        src = "/dictionary.cambridge.org/pl/images/thumb/black_noun_002_03536.jpg?version=5.0.287"
+        return src
 
 
  

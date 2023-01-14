@@ -3,9 +3,9 @@
 <body>
 
     
-{% for artist, image in test %}
-<a> {{ artist }} </a> <br>
-<img src='{{image}}'> <br>
+{% for artist, image, howmuch in test %}
+<a> {{ artist }}: </a> <a>{{howmuch}} songs</a> <br>
+<a href="http://127.0.0.1:5000/{{artist}}"><img src='{{image}}' style="height:200px;" > <br></a>
 {% endfor %}
 
 </body>
