@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import scrapper
 import pandas as pd
 import numpy
-pd.options.display.max_colwidth = 9999999999999999999999999999999999
+pd.options.display.max_colwidth = 99999999999999999999999999999999999
 
 
 
@@ -32,10 +32,9 @@ def GetSongLyrics(title):
 
 for artist in artists:
    url = f"https:/{scrapper.GetImageSrc(artist)}"
-
+   #url = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Selena_Gomez_at_White_House.jpg/440px-Selena_Gomez_at_White_House.jpg"
    images.append(url)
-   print(f"{i/170 *100}%")
-   i=i+1
+
 
 test = zip(artists, images, howmuch)
     

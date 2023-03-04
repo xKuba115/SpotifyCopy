@@ -1,11 +1,25 @@
 <html>
+<head>
 
+    <style>
+        .okienko{
+
+            width:300px;
+            height: 400px;
+            text-align: center;
+            position:inherit;
+        }
+
+    </style>
+</head>
 <body>
 
     
 {% for artist, image, howmuch in test %}
+<div class="okienko">
 <a> {{ artist }}: </a> <a>{{howmuch}} songs</a> <br>
 <a href="http://127.0.0.1:5000/{{artist}}"><img src='{{image}}' style="height:200px;" > <br></a>
+</div>
 {% endfor %}
 
 </body>
